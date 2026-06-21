@@ -1,0 +1,65 @@
+body{
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f7fa;
+
+    margin: 0;
+
+    padding: 30px;
+
+}
+
+h1{
+
+    text-align: center;
+
+    color: #008b8b;
+
+}
+
+h2{
+
+    color: #008b8b;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+form{
+
+    width: 700px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px lightgray;
+
+}
+
+input,
+
+select,
+
+textarea{
+
+    width: 100%;
+
+    padding: 8px;
+
+    margin-top: 5px;
+
+    margin-bottom: 15px;
+
+    box-sizing: border-box;
+
+}
