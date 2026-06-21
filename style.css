@@ -46,7 +46,17 @@ form{
 
 }
 
-input,
+input[type="text"],
+
+input[type="number"],
+
+input[type="email"],
+
+input[type="password"],
+
+input[type="date"],
+
+input[list],
 
 select,
 
@@ -62,4 +72,122 @@ textarea{
 
     box-sizing: border-box;
 
+}
+
+input[type="radio"],
+
+input[type="checkbox"]{
+
+    width: auto;
+
+    margin-right: 5px;
+
+}
+
+label{
+
+    margin-right: 15px;
+
+}
+
+.encabezado{
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.encabezado p{
+
+    font-size: 18px;
+
+}
+
+.encabezado a{
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+.encabezado img{
+
+    width: 120px;
+
+    height: auto;
+
+}
+
+.logo-about{
+
+    display: block;
+
+    width: 250px;
+
+    height: auto;
+
+    margin: auto;
+
+}
+
+.contenedor-about{
+
+    width: 800px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px lightgray;
+
+}
+
+.contenedor-about p{
+
+    text-align: justify;
+
+    line-height: 1.6;
+
+}
+
+.contenedor-about ul{
+
+    line-height: 1.8;
+
+}
+
+.info-sistema{
+
+    background-color: #f7f7f7;
+
+    border: 1px solid lightgray;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-top: 10px;
+
+}
+
+.info-sistema p{
+
+    text-align: center;
+
+    margin: 8px 0;
+
+}
+
+.contenedor-about a{
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+    
 }

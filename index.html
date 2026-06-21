@@ -19,18 +19,21 @@
 
 <body>
 
-    <h1>Hada Dental</h1>
+    <div class="encabezado">
 
-    <p>
-        Bienvenido al sistema de registros de pacientes del Centro Odontológico Hada Dental.
-    </p>
-    
-    
-    <div>
-    
+        <h1>Hada Dental</h1>
+
+        <img src="images/logo_hada_dental.jpg"
+        alt="Logo Hada Dental">
+
+        <p>
+            Bienvenido al sistema de registro de pacientes del Centro Odontológico Hada Dental.
+        </p>
+
         <a href="about.html">
             Acerca de Nosotros
         </a>
+        
     </div>
 
     <hr>
@@ -120,30 +123,41 @@
 
         Sexo: 
 
-        <input
-        type="radio"
-        id="femenino"
-        name="sexo"
-        value="Femenino"
-        required>
+        <label>
 
-        <label for="femenino">Femenino</label>
+            <input 
+            type="radio"
+            id="femenino"
+            name="sexo"
+            value="Femenino">
 
-        <input
-        type="radio"
-        id="masculino"
-        name="sexo"
-        value="Masculino">
+            Femenino
 
-        <label for="masculino">Masculino</label>
+        </label>
 
-        <input
-        type="radio"
-        id="otro"
-        name="sexo"
-        value="Otro">
+        <label>
 
-        <label for="otro">Otro</label>
+            <input
+            type="radio"
+            id="masculino"
+            name="sexo"
+            value="Masculino">
+
+            Masculino
+
+        </label>
+
+        <label>
+
+            <input
+            type="radio"
+            id="otro"
+            name="sexo"
+            value="Otro">
+
+            Otro
+
+        </label>
 
         <br><br>
 
@@ -156,7 +170,7 @@
         <select
         id="servicio"
         name="Servicio"
-        require>
+        required>
 
             <option value="">Seleccione una opción</option>
 
