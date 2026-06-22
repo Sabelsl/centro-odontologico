@@ -162,6 +162,8 @@ label{
 
 .info-sistema{
 
+    font-family: 'Courier New', Courier, monospace;
+
     background-color: #f7f7f7;
 
     border: 1px solid lightgray;
@@ -195,24 +197,38 @@ label{
 
 
 #resumen_paciente{
+
     width: 700px;
     margin: 30px auto;
+
 }
 
 #resumen_paciente h2{
+
     text-align: center;
     color: #008b8b;
+
 }
 
 #resumen_paciente p{
+
     background-color: white;
     padding: 10px;
     margin: 6px 0;
     border-left: 5px solid #008b8b;
     border-radius: 5px;
     box-shadow: 0 0 5px lightgray;
+
 }
 
 #resumen_paciente strong{
+
     color: #008b8b;
+
+}
+
+.desarrolladoras p{
+
+    margin: 1px 0;
+
 }
