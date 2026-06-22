@@ -6,8 +6,9 @@
 
     <meta charset="UTF-8">
 
-    <meta name="author" content="Sofía Giraldo López">
-    <meta name="author" content="Sara Isabel Suárez Londoño">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Sofía Giraldo López y Sara Isabel Suárez Londoño">
 
     <meta name="description" content="Registro de pacientes odontológicos">
 
@@ -38,7 +39,10 @@
 
     <hr>
 
-    <form>
+    <form
+        id="formulario_hada_dental"
+        name="formularioHadaDental"
+        action="#">
 
         <h2>Datos Personales del Paciente</h2>
 
@@ -58,10 +62,12 @@
         Documento de Identidad:
 
         <input
-        type="number"
+        type="text"
         id="documento"
         name="Documento"
         placeholder="Ingrese su documento"
+        maxlength="11"
+        minlength="8"
         required>
 
         <br><br>
@@ -101,13 +107,18 @@
 
         Edad:
 
+        <span id="valorEdad">50</span>
+
         <input
         type="range"
         id="edad"
         name="Edad"
         min="1"
         max="100"
+        value="50"
         required>
+
+        
 
         <br><br>
 
@@ -179,10 +190,33 @@
             <option>Blanqueamiento dental</option>
             <option>Diseño de sonrisa</option>
             <option>Implantes dentales</option>
+            <option>Emergencia odontológica</option>
     
         </select>
 
         <br><br>
+
+        <div id="campo_dolor" style="display: none;">
+
+    <label for="nivel_dolor">
+        Nivel de dolor:
+    </label>
+
+    <span id="valor_dolor">5</span>
+
+    <br>
+
+    <input
+    type="range"
+    id="nivel_dolor"
+    name="NivelDolor"
+    min="1"
+    max="10"
+    value="5">
+
+    <br><br>
+
+</div>
         
         Alergias:
 
@@ -275,21 +309,37 @@
         Adjuntar radiografía dental:
 
         <input
-        type="file"
-        id="radiografia"
-        name="Radiografia">
+type="file"
+id="radiografia"
+name="Radiografia">
 
-        <br><br>
+<br><br>
 
-        <input
-        type="submit"
-        value="Registrar Paciente">
+<input
+type="checkbox"
+id="acepta_datos"
+name="acepta_datos">
 
-        <input
-        type="reset"
-        value="Limpiar Formulario">
+<label for="acepta_datos">
+Acepta tratamiento de datos personales.
+</label>
 
-    </form>
+<br><br>
+
+<input
+type="submit"
+value="Registrar Paciente">
+
+<input
+type="reset"
+value="Limpiar Formulario">
+
+</form>
+
+
+<div id="resumen_paciente"></div>
+<script src="validacion_form.js"></script>
+
 
 </body>
 
