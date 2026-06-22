@@ -196,27 +196,29 @@
 
         <br><br>
 
-        <div id="campo_dolor" style="display: none;">
+        <div 
+        id="campo_dolor" 
+        style="display: none;">
 
-    <label for="nivel_dolor">
-        Nivel de dolor:
-    </label>
+            <label for="nivel_dolor">
+                Nivel de dolor:
+            </label>
 
-    <span id="valor_dolor">5</span>
+            <span id="valor_dolor">5</span>
 
-    <br>
+            <br>
 
-    <input
-    type="range"
-    id="nivel_dolor"
-    name="NivelDolor"
-    min="1"
-    max="10"
-    value="5">
+            <input
+            type="range"
+            id="nivel_dolor"
+            name="NivelDolor"
+            min="1"
+            max="10"
+            value="5">
 
-    <br><br>
+            <br><br>
 
-</div>
+        </div>
         
         Alergias:
 
@@ -309,37 +311,38 @@
         Adjuntar radiografía dental:
 
         <input
-type="file"
-id="radiografia"
-name="Radiografia">
+        type="file"
+        id="radiografia"
+        name="Radiografia">
 
-<br><br>
+        <br><br>
 
-<input
-type="checkbox"
-id="acepta_datos"
-name="acepta_datos">
+        <input
+        type="checkbox"
+        id="acepta_datos"
+        name="acepta_datos">
 
-<label for="acepta_datos">
-Acepta tratamiento de datos personales.
-</label>
+        <label for="acepta_datos">
 
-<br><br>
+            ¿Acepta tratamiento de datos personales?
 
-<input
-type="submit"
-value="Registrar Paciente">
+        </label>
 
-<input
-type="reset"
-value="Limpiar Formulario">
+        <br><br>
 
-</form>
+        <input
+        type="submit"
+        value="Registrar Paciente">
 
+        <input
+        type="reset"
+        value="Limpiar Formulario">
 
-<div id="resumen_paciente"></div>
-<script src="validacion_form.js"></script>
+    </form>
 
+    <div id="resumen_paciente"></div>
+
+    <script src="validacion_form.js"></script>
 
 </body>
 
