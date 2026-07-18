@@ -127,7 +127,7 @@ input[type="checkbox"]{
 input[type="submit"],
 input[type="reset"]{
 
-    backgound: var(--color-principal);
+    background: var(--color-principal);
     
     color:white;
 
