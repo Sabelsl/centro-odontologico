@@ -9,12 +9,12 @@
 
 body{
 
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 
-    background-color: linear-gradient(
+    background: linear-gradient(
         to bottom,
-        #eef9fb,
-        #d9eef1,
+        #dff6fb,
+        #f7fcfd
     );
 
     margin: 0;
@@ -78,6 +78,8 @@ form{
 
     border: 1px solid #dcecec;
 
+    transition: .3s;
+
 }
 
 input[type="text"],
@@ -101,6 +103,8 @@ textarea{
     margin-bottom: 15px;
 
     box-sizing: border-box;
+
+    background-color: #fcfefe;
 
 }
 
@@ -161,9 +165,22 @@ label{
 }
 
 .encabezado{
+
+    width: 90%;
+    max-width: 700px;
+
+    margin: 0 auto 30px auto;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+
     text-align: center;
 
-    margin-bottom: 20px;
 }
 
 .encabezado p{
